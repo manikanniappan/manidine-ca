@@ -1,4 +1,4 @@
-// ManiDine.ca / (project root) / app/page.tsx — Updated: 2026-01-14 15:20 (America/Edmonton)
+// ManiDine.ca / (project root) / app/page.tsx — Updated: 2026-01-19 16:45 (America/Edmonton)
 // FILE: app/page.tsx – ManiDine.ca (Homepage with HeroCarousel integrated)
 
 import React from "react";
@@ -67,6 +67,13 @@ export default function HomePage() {
                 </div>
                 <div className="mt-1 text-[13px] text-white/70">
                   Available on iOS &amp; Android
+                </div>
+
+                {/* ✅ COMING SOON (Customer) */}
+                <div className="mt-4 flex flex-col items-center gap-2">
+                  <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-bold tracking-wide text-white/75">
+                    COMING SOON
+                  </span>
                 </div>
 
                 <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -143,26 +150,26 @@ export default function HomePage() {
                   <li>Local support &amp; accountability</li>
                 </ul>
 
-                {/* ✅ Restaurant app download pills (kept) */}
+                {/* ✅ Restaurant portal CTA (Option B: portal not ready) */}
                 <div className="mt-6 w-full rounded-3xl border border-white/10 bg-white/10 p-5 backdrop-blur-md">
                   <div className="text-[15px] font-semibold">
-                    Download the ManiDine Restaurant app
+                    Restaurant Portal (Web)
                   </div>
                   <div className="mt-1 text-[13px] text-white/70">
-                    Available on iOS &amp; Android
+                    No app required — access will be provided after approval.
                   </div>
 
-                  <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                    <button
-                      className={`w-full rounded-full ${APP_GRADIENT_BTN} px-5 py-3 text-[13px] font-semibold text-white shadow-lg shadow-black/30 hover:brightness-110`}
+                  <div className="mt-4 grid grid-cols-1 gap-3">
+                    <a
+                      href="/contact"
+                      className={`w-full rounded-full ${APP_GRADIENT_BTN} px-5 py-3 text-center text-[13px] font-semibold text-white shadow-lg shadow-black/30 hover:brightness-110`}
                     >
-                       App Store
-                    </button>
-                    <button
-                      className={`w-full rounded-full ${APP_GRADIENT_BTN} px-5 py-3 text-[13px] font-semibold text-white shadow-lg shadow-black/30 hover:brightness-110`}
-                    >
-                      ▶ Google Play
-                    </button>
+                      Apply to join ManiDine
+                    </a>
+
+                    <div className="w-full cursor-not-allowed rounded-full border border-white/15 bg-white/5 px-5 py-3 text-center text-[13px] font-semibold text-white/45">
+                      Portal access provided after approval
+                    </div>
                   </div>
                 </div>
               </div>
@@ -185,6 +192,13 @@ export default function HomePage() {
                   </div>
                   <div className="mt-1 text-[13px] text-white/70">
                     Available on iOS &amp; Android
+                  </div>
+
+                  {/* ✅ COMING SOON (Driver) */}
+                  <div className="mt-4 flex flex-col items-center gap-2">
+                    <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-bold tracking-wide text-white/75">
+                      COMING SOON
+                    </span>
                   </div>
 
                   <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
