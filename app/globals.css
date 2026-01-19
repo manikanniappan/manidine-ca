@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.manidine-gradient-values td:last-child,
+.manidine-gradient-values th:last-child {
+  background: linear-gradient(90deg, #6595d5, #0f71d4, #bc5bca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
