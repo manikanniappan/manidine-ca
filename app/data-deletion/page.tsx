@@ -1,4 +1,4 @@
-// ManiDine.ca /app/data-deletion/page.tsx — Updated: 2026-01-12 18:10 (America/Edmonton)
+// ManiDine.ca — FILE: /app/data-deletion/page.tsx — Updated: 2026-01-20 03:45 PM (America/Edmonton)
 // FILE: app/data-deletion/page.tsx
 
 import type { Metadata } from "next";
@@ -70,16 +70,15 @@ export default function DataDeletionPage() {
             {/* Option A: In-app */}
             <section>
               <h2 className="text-[20px] font-bold text-white md:text-[22px]">
-                2. Delete Your Account In the App (If Available)
+                2. Delete Your Account In the App
               </h2>
               <p className="mt-3">
-                If your ManiDine app includes account deletion, you can request
-                deletion by going to:
+                You can delete your ManiDine account directly in the app by
+                going to:
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-6">
                 <li>
-                  <span className="font-semibold text-white">Account</span> →{" "}
-                  <span className="font-semibold text-white">Privacy</span> →{" "}
+                  <span className="font-semibold text-white">Profile</span> →{" "}
                   <span className="font-semibold text-white">
                     Delete Account
                   </span>
@@ -97,8 +96,8 @@ export default function DataDeletionPage() {
                 3. Delete Your Account by Email (Always Available)
               </h2>
               <p className="mt-3">
-                If you do not see an in-app option, you can request deletion by
-                emailing our Privacy Officer:
+                You can also request deletion at any time by emailing our
+                Privacy Officer:
               </p>
 
               <div className="mt-4 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
@@ -114,7 +113,9 @@ export default function DataDeletionPage() {
                 Please include the following in your request:
               </p>
               <ul className="mt-3 list-disc space-y-2 pl-6">
-                <li>The email address and/or phone number used for your account</li>
+                <li>
+                  The email address and/or phone number used for your account
+                </li>
                 <li>Your role: Customer, Driver, or Restaurant staff</li>
                 <li>
                   A short message confirming you want your account and personal
@@ -167,8 +168,8 @@ export default function DataDeletionPage() {
               </ul>
 
               <p className="mt-4">
-                If you are a Driver or Restaurant user, deletion may also include
-                certain profile information tied to that account.
+                If you are a Driver or Restaurant user, deletion may also
+                include certain profile information tied to that account.
               </p>
             </section>
 
@@ -214,12 +215,16 @@ export default function DataDeletionPage() {
                 9. What Happens After Deletion
               </h2>
               <ul className="mt-4 list-disc space-y-2 pl-6">
-                <li>You will no longer be able to sign in to the deleted account</li>
-                <li>Past order history may no longer appear in the app</li>
-                <li>Saved addresses and preferences are removed (where applicable)</li>
                 <li>
-                  If you want to use ManiDine again, you may need to create a new
-                  account
+                  You will no longer be able to sign in to the deleted account
+                </li>
+                <li>Past order history may no longer appear in the app</li>
+                <li>
+                  Saved addresses and preferences are removed (where applicable)
+                </li>
+                <li>
+                  If you want to use ManiDine again, you may need to create a
+                  new account
                 </li>
               </ul>
             </section>
@@ -242,7 +247,10 @@ export default function DataDeletionPage() {
 
               <p className="mt-4 text-white/80">
                 You may also review our{" "}
-                <Link href="/privacy" className="text-white underline underline-offset-4 hover:text-white/90">
+                <Link
+                  href="/privacy"
+                  className="text-white underline underline-offset-4 hover:text-white/90"
+                >
                   Privacy Policy
                 </Link>{" "}
                 for additional information.
