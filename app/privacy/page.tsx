@@ -1,5 +1,4 @@
-// ManiDine.ca /app/privacy/page.tsx — Updated: 2026-01-12 14:55 (America/Edmonton)
-// FILE: app/privacy/page.tsx
+// ManiDine.ca — FILE: /app/privacy/page.tsx — Updated: 2026-01-20 03:40 PM (America/Edmonton)
 
 import type { Metadata } from "next";
 
@@ -54,9 +53,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-[20px] font-bold text-white md:text-[22px]">
                 0. Definitions
               </h2>
-              <p className="mt-3">
-                In this Privacy Policy:
-              </p>
+              <p className="mt-3">In this Privacy Policy:</p>
               <ul className="mt-3 list-disc space-y-2 pl-6">
                 <li>
                   <span className="font-semibold text-white">
@@ -202,9 +199,7 @@ export default function PrivacyPolicyPage() {
                 A) Sharing for delivery and order completion
               </h3>
               <ul className="mt-3 list-disc space-y-2 pl-6">
-                <li>
-                  Restaurants receive order details needed to prepare food.
-                </li>
+                <li>Restaurants receive order details needed to prepare food.</li>
                 <li>
                   Drivers receive delivery details needed to complete delivery,
                   including address and instructions.
@@ -274,10 +269,10 @@ export default function PrivacyPolicyPage() {
                 chargebacks/refunds, and legal compliance.
               </p>
               <p className="mt-3">
-                You may request deletion of your account through “Privacy
-                Settings” in the app (if available) or by contacting support.
-                Some information may be retained where required for legal,
-                accounting, or security reasons.
+                You may delete your account directly in the app under Profile →
+                Delete Account, or by contacting support. Some information may
+                be retained where required for legal, accounting, or security
+                reasons.
               </p>
             </section>
 
