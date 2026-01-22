@@ -1,4 +1,4 @@
-// ManiDine.ca /components/Footer.tsx — Updated: 2026-01-12 18:20 (America/Edmonton)
+// ManiDine.ca /components/Footer.tsx — Updated: 2026-01-22 15:40 (America/Edmonton)
 // FILE: components/Footer.tsx
 
 import Link from "next/link";
@@ -33,7 +33,6 @@ export default function Footer() {
             Refund Policy
           </Link>
 
-          {/* NEW: Data Deletion */}
           <Link href="/data-deletion" className="hover:text-white">
             Data Deletion
           </Link>
@@ -41,6 +40,22 @@ export default function Footer() {
           <Link href="/contact" className="hover:text-white">
             Contact
           </Link>
+        </div>
+
+        {/* Social handles (bottom bar) */}
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-[13px] text-white/55">
+          <div>
+            Instagram: <span className="text-white/75">manidine.ca</span>
+          </div>
+          <div>
+            TikTok: <span className="text-white/75">manidine.ca</span>
+          </div>
+          <div>
+            YouTube: <span className="text-white/75">manidine_ca</span>
+          </div>
+          <div>
+            Twitter/X: <span className="text-white/75">manidine_ca</span>
+          </div>
         </div>
 
         {/* Copyright */}

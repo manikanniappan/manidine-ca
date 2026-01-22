@@ -1,3 +1,4 @@
+// ManiDine.ca /components/SiteHeader.tsx — Updated: 2026-01-22 15:40 (America/Edmonton)
 // FILE: components/SiteHeader.tsx
 "use client";
 
@@ -43,12 +44,6 @@ export default function SiteHeader() {
           <Link className="hover:text-white" href="/drivers">
             Drivers
           </Link>
-          <Link className="hover:text-white" href="/pricing">
-            Pricing
-          </Link>
-          <Link className="hover:text-white" href="/faq">
-            FAQ
-          </Link>
           <Link className="hover:text-white" href="/contact">
             Contact
           </Link>
@@ -64,9 +59,7 @@ export default function SiteHeader() {
             className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/90 hover:bg-white/10"
           >
             {/* Icon */}
-            <span className="text-[18px] leading-none">
-              {open ? "✕" : "☰"}
-            </span>
+            <span className="text-[18px] leading-none">{open ? "✕" : "☰"}</span>
           </button>
         </div>
       </div>
@@ -95,18 +88,6 @@ export default function SiteHeader() {
                   href="/drivers"
                 >
                   Drivers
-                </Link>
-                <Link
-                  className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white/90 hover:bg-white/10"
-                  href="/pricing"
-                >
-                  Pricing
-                </Link>
-                <Link
-                  className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white/90 hover:bg-white/10"
-                  href="/faq"
-                >
-                  FAQ
                 </Link>
                 <Link
                   className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white/90 hover:bg-white/10"
