@@ -1,110 +1,82 @@
-// ManiDine.ca (Next.js) /components/Footer.tsx — Updated 2026-01-24 18:54
-import React from "react";
+// ManiDine.ca — /components/Footer.tsx — Updated: 2026-01-24 19:42 (America/Edmonton)
+// FILE: components/Footer.tsx
+
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mt-24 border-t border-white/10">
-      <div className="mx-auto max-w-6xl px-6 py-10">
+    <footer className="border-t border-white/10 bg-[#060d1f]">
+      <div className="mx-auto max-w-6xl px-4 py-8">
         {/* Links */}
-        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-white/70">
-          <a href="/restaurants" className="hover:text-white">
-            Restaurants
-          </a>
-          <a href="/drivers" className="hover:text-white">
-            Drivers
-          </a>
-          <a href="/contact" className="hover:text-white">
-            Contact
-          </a>
-          <span className="text-white/20">|</span>
-          <a href="/privacy" className="hover:text-white">
-            Privacy
-          </a>
-          <a href="/terms" className="hover:text-white">
-            Terms
-          </a>
-          <a href="/refund" className="hover:text-white">
-            Refund
-          </a>
-          <a href="/data-deletion" className="hover:text-white">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-[14px] text-white/70">
+          <Link href="/about" className="hover:text-white">
+            About Us
+          </Link>
+
+          <Link href="/founder" className="hover:text-white">
+            Founder Note
+          </Link>
+
+          <Link href="/faq" className="hover:text-white">
+            FAQ
+          </Link>
+
+          <Link href="/privacy" className="hover:text-white">
+            Privacy Policy
+          </Link>
+
+          <Link href="/terms" className="hover:text-white">
+            Terms & Conditions
+          </Link>
+
+          <Link href="/refund" className="hover:text-white">
+            Refund Policy
+          </Link>
+
+          <Link href="/data-deletion" className="hover:text-white">
             Data Deletion
-          </a>
+          </Link>
+
+          <Link href="/contact" className="hover:text-white">
+            Contact
+          </Link>
         </div>
 
-        {/* Social */}
-        <div className="mt-8 flex flex-col items-center gap-3">
-          <div className="text-sm text-white/70">Follow us on</div>
+        {/* Follow us row */}
+        <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className="text-[13px] font-semibold text-white/60">
+            Follow us on
+          </div>
 
-          <div className="flex items-center gap-3">
-            {/* Facebook */}
-            <a
-              href="https://www.facebook.com/profile.php?id=61583352970772"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Facebook"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 hover:bg-white/15 transition"
-              title="Facebook"
-            >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M13.5 21v-7h2.4l.4-3H13.5V9.2c0-.9.2-1.5 1.5-1.5h1.4V5.1c-.7-.1-1.6-.1-2.6-.1-2.6 0-4.3 1.6-4.3 4.5V11H7.2v3h2.3v7h4z"
-                  fill="#1877F2"
-                />
-              </svg>
-            </a>
-
+          <div className="flex items-center justify-center gap-3">
             {/* Instagram */}
             <a
-              href="https://www.instagram.com/manidine.ca"
+              href="https://www.instagram.com/manidine.ca/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="Instagram"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 hover:bg-white/15 transition"
-              title="Instagram"
+              title="Instagram: manidine.ca"
+              className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition"
             >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-              >
+              <svg viewBox="0 0 24 24" className="h-6 w-6">
                 <defs>
-                  <linearGradient
-                    id="igGrad"
-                    x1="2"
-                    y1="22"
-                    x2="22"
-                    y2="2"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stopColor="#F58529" />
-                    <stop offset="0.5" stopColor="#DD2A7B" />
-                    <stop offset="1" stopColor="#8134AF" />
+                  <linearGradient id="igGrad" x1="0" y1="24" x2="24" y2="0">
+                    <stop offset="0" stopColor="#FEDA75" />
+                    <stop offset="0.25" stopColor="#FA7E1E" />
+                    <stop offset="0.5" stopColor="#D62976" />
+                    <stop offset="0.75" stopColor="#962FBF" />
+                    <stop offset="1" stopColor="#4F5BD5" />
                   </linearGradient>
                 </defs>
                 <path
-                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z"
                   fill="url(#igGrad)"
                 />
                 <path
-                  d="M12 16.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4z"
+                  d="M12 7.25A4.75 4.75 0 1 0 16.75 12 4.76 4.76 0 0 0 12 7.25Zm0 7.7A2.95 2.95 0 1 1 14.95 12 2.95 2.95 0 0 1 12 14.95Z"
                   fill="white"
-                  opacity="0.95"
                 />
-                <circle
-                  cx="17.6"
-                  cy="6.4"
-                  r="1.1"
-                  fill="white"
-                  opacity="0.95"
-                />
+                <circle cx="17.5" cy="6.5" r="1.2" fill="white" />
               </svg>
             </a>
 
@@ -112,31 +84,42 @@ export default function Footer() {
             <a
               href="https://www.tiktok.com/@manidine.ca"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="TikTok"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 hover:bg-white/15 transition"
-              title="TikTok"
+              title="TikTok: manidine.ca"
+              className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition"
             >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-              >
+              <svg viewBox="0 0 24 24" className="h-6 w-6">
                 <path
-                  d="M15.5 4c.8 2.7 2.6 4.3 5 4.6v3.1c-2.1-.1-3.9-.8-5-1.9V16c0 3-2.5 5.5-5.5 5.5S4.5 19 4.5 16s2.5-5.5 5.5-5.5c.3 0 .6 0 .9.1v3.2c-.3-.2-.6-.3-.9-.3-1.3 0-2.3 1-2.3 2.5s1 2.5 2.3 2.5 2.3-1 2.3-2.5V4h3.3z"
-                  fill="#FFFFFF"
+                  d="M14 3v10.2a3.9 3.9 0 1 1-3.2-3.85"
+                  fill="none"
+                  stroke="#FFFFFF"
+                  strokeWidth="3.2"
+                  strokeLinecap="round"
                 />
                 <path
-                  d="M15.5 4c.6 2.2 2 3.6 4.3 4.2v1.2c-2-.3-3.4-1.2-4.3-2.4V16c0 3-2.5 5.5-5.5 5.5-1.6 0-3-.6-4-1.6 1 .7 2.2 1.1 3.5 1.1 3 0 5.5-2.5 5.5-5.5V4h.5z"
-                  fill="#FF004F"
-                  opacity="0.95"
+                  d="M14 3c1.2 2.6 3.4 4.2 6.1 4.2"
+                  fill="none"
+                  stroke="#FFFFFF"
+                  strokeWidth="3.2"
+                  strokeLinecap="round"
                 />
                 <path
-                  d="M10.9 10.6v1.3c-.3-.1-.6-.1-.9-.1-3 0-5.5 2.5-5.5 5.5 0 1.4.5 2.7 1.4 3.6A5.46 5.46 0 0 1 3 16c0-3 2.5-5.5 5.5-5.5.5 0 1 0 1.4.1z"
-                  fill="#00F2EA"
-                  opacity="0.95"
+                  d="M14 3v10.2a3.9 3.9 0 1 1-3.2-3.85"
+                  fill="none"
+                  stroke="#25F4EE"
+                  strokeWidth="1.2"
+                  strokeLinecap="round"
+                  opacity="0.9"
+                />
+                <path
+                  d="M14 3v10.2a3.9 3.9 0 1 1-3.2-3.85"
+                  fill="none"
+                  stroke="#FE2C55"
+                  strokeWidth="1.2"
+                  strokeLinecap="round"
+                  opacity="0.9"
+                  transform="translate(0.3,0.2)"
                 />
               </svg>
             </a>
@@ -145,57 +128,63 @@ export default function Footer() {
             <a
               href="https://www.youtube.com/@manidine_ca"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="YouTube"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 hover:bg-white/15 transition"
-              title="YouTube"
+              title="YouTube: manidine_ca"
+              className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition"
             >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-              >
+              <svg viewBox="0 0 24 24" className="h-6 w-6">
                 <path
-                  d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5A3 3 0 0 0 2.4 7.2 31.8 31.8 0 0 0 2 12a31.8 31.8 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.8 31.8 0 0 0 22 12a31.8 31.8 0 0 0-.4-4.8z"
+                  d="M21.5 7.5s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C15.8 4.3 12 4.3 12 4.3s-3.8 0-6.6.3c-.4.1-1.3.1-2.1.9-.6.6-.8 2-.8 2S2 9.1 2 10.7v1.5c0 1.6.5 3.2.5 3.2s.2 1.4.8 2c.8.8 1.9.8 2.3.9 1.7.2 6.4.3 6.4.3s3.8 0 6.6-.3c.4-.1 1.3-.1 2.1-.9.6-.6.8-2 .8-2s.5-1.6.5-3.2v-1.5c0-1.6-.5-3.2-.5-3.2Z"
                   fill="#FF0000"
                 />
+                <path d="M10 9.5v5l5-2.5-5-2.5Z" fill="white" />
+              </svg>
+            </a>
+
+            {/* Twitter / X */}
+            <a
+              href="https://x.com/manidine_ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X (Twitter)"
+              title="X: manidine_ca"
+              className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition"
+            >
+              <svg viewBox="0 0 24 24" className="h-6 w-6">
                 <path
-                  d="M10 15.3V8.7L15.8 12 10 15.3z"
+                  d="M18.8 3H21l-7.2 8.2L22 21h-6.6l-5.2-6.1L4.8 21H2.6l7.7-8.8L2 3h6.7l4.7 5.5L18.8 3Zm-1.2 16h1.2L7.1 4.9H5.8L17.6 19Z"
                   fill="white"
-                  opacity="0.95"
                 />
               </svg>
             </a>
 
-            {/* X / Twitter */}
+            {/* Facebook (correct link) */}
             <a
-              href="https://x.com/manidine_ca"
+              href="https://www.facebook.com/profile.php?id=61583352970772"
               target="_blank"
-              rel="noreferrer"
-              aria-label="X"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 hover:bg-white/15 transition"
-              title="X (Twitter)"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              title="Facebook: ManiDine"
+              className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition"
             >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-              >
+              <svg viewBox="0 0 24 24" className="h-6 w-6">
                 <path
-                  d="M18.9 3H21l-7.6 8.7L22 21h-6.7l-5.2-6-5.2 6H3l8.1-9.3L2 3h6.8l4.7 5.4L18.9 3zm-2.3 16h1.2L7.4 4.9H6.2L16.6 19z"
-                  fill="#FFFFFF"
+                  d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8v-6.9H7.9V12H10V9.8c0-2.07 1.23-3.22 3.12-3.22.9 0 1.84.16 1.84.16v2.03h-1.04c-1.02 0-1.34.64-1.34 1.29V12h2.28l-.36 2.9h-1.92v6.9c4.56-.93 8-4.96 8-9.8 0-5.52-4.48-10-10-10Z"
+                  fill="#1877F2"
+                />
+                <path
+                  d="M14.92 14.9 15.28 12H13v-1.68c0-.65.32-1.29 1.34-1.29h1.04V6.74s-.94-.16-1.84-.16C11.23 6.58 10 7.73 10 9.8V12H7.9v2.9H10v6.9c.65.13 1.32.2 2 .2s1.35-.07 2-.2v-6.9h1.92Z"
+                  fill="white"
+                  opacity="0.95"
                 />
               </svg>
             </a>
           </div>
         </div>
 
-        {/* Contact Email */}
-        <div className="mt-5 text-center text-sm text-white/60">
+        {/* Contact email */}
+        <div className="mt-5 text-center text-[13px] text-white/60">
           Email{" "}
           <a
             href="mailto:contact@manidine.ca"
@@ -206,8 +195,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-6 text-center text-xs text-white/40">
-          © {new Date().getFullYear()} ManiDine. All rights reserved.
+        <div className="mt-6 text-center text-[12px] text-white/40">
+          © {new Date().getFullYear()} ManiDine
         </div>
       </div>
     </footer>
