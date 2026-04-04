@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Stripe Onboarding Refresh",
   description:
-    "ManiDine Stripe onboarding refresh page for restaurant account setup.",
+    "ManiDine Stripe onboarding refresh page for  account setup.",
   robots: {
     index: false,
     follow: false,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Stripe Onboarding Refresh | ManiDine",
     description:
-      "Restart or continue Stripe onboarding for your ManiDine restaurant account.",
+      "Restart or continue Stripe onboarding for your ManiDine  account.",
     url: "/stripe-refresh",
     type: "website",
   },
@@ -43,7 +43,7 @@ export default function StripeRefreshPage() {
 
             <p className="mx-auto mt-5 max-w-[700px] text-[15.5px] leading-relaxed text-white/80 md:text-[16.5px]">
               Your Stripe onboarding session needs to be restarted or refreshed.
-              Please return to the ManiDine Restaurant Portal and begin the Stripe
+              Please return to the ManiDine App and begin the Stripe
               setup flow again from the Payments page.
             </p>
 
@@ -54,7 +54,7 @@ export default function StripeRefreshPage() {
               <ul className="mt-3 list-disc space-y-2 pl-5 text-[14.5px] leading-relaxed text-white/78 md:text-[15.5px]">
                 <li>The onboarding session expired.</li>
                 <li>You closed or backed out of Stripe before finishing.</li>
-                <li>Stripe needs you to restart the setup link from the portal.</li>
+                <li>Stripe needs you to restart the setup link from the app.</li>
               </ul>
             </div>
 

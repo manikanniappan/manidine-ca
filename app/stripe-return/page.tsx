@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Stripe Onboarding Return",
   description:
-    "ManiDine Stripe onboarding return page for restaurant account setup.",
+    "ManiDine Stripe onboarding return page for  account setup.",
   robots: {
     index: false,
     follow: false,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Stripe Onboarding Return | ManiDine",
     description:
-      "You have returned from Stripe onboarding for your ManiDine restaurant account.",
+      "You have returned from Stripe onboarding for your ManiDine  account.",
     url: "/stripe-return",
     type: "website",
   },
@@ -42,9 +42,9 @@ export default function StripeReturnPage() {
             <div className="mx-auto mt-6 h-px w-full max-w-[620px] bg-white/15" />
 
             <p className="mx-auto mt-5 max-w-[700px] text-[15.5px] leading-relaxed text-white/80 md:text-[16.5px]">
-              You have returned from Stripe onboarding for your ManiDine restaurant
-              account. If your setup was completed successfully, your restaurant
-              portal should update once Stripe finishes sending the latest account
+              You have returned from Stripe onboarding for your ManiDine 
+              account. If your setup was completed successfully, your 
+              app should update once Stripe finishes sending the latest account
               status back to ManiDine.
             </p>
 
