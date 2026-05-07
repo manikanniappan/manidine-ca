@@ -1,4 +1,4 @@
-// ManiDine.ca — /components/Footer.tsx — Updated: 2026-01-24 19:42 (America/Edmonton)
+// ManiDine.ca — /components/Footer.tsx — Updated: 2026-05-07 16:12 (America/Edmonton)
 // FILE: components/Footer.tsx
 
 import Link from "next/link";
@@ -159,7 +159,7 @@ export default function Footer() {
               </svg>
             </a>
 
-            {/* Facebook (correct link) */}
+            {/* Facebook */}
             <a
               href="https://www.facebook.com/profile.php?id=61583352970772"
               target="_blank"
@@ -183,15 +183,29 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Contact email */}
-        <div className="mt-5 text-center text-[13px] text-white/60">
-          Email{" "}
-          <a
-            href="mailto:contact@manidine.ca"
-            className="underline underline-offset-4 hover:text-white"
-          >
-            contact@manidine.ca
-          </a>
+        {/* Contact */}
+        <div className="mt-5 flex flex-col items-center justify-center gap-2 text-center text-[13px] text-white/60 sm:flex-row sm:gap-5">
+          <div>
+            Email{" "}
+            <a
+              href="mailto:contact@manidine.ca"
+              className="underline underline-offset-4 hover:text-white"
+            >
+              contact@manidine.ca
+            </a>
+          </div>
+
+          <div className="hidden h-4 w-px bg-white/15 sm:block" />
+
+          <div>
+            Phone{" "}
+            <a
+              href="tel:+15875708552"
+              className="underline underline-offset-4 hover:text-white"
+            >
+              587-570-8552
+            </a>
+          </div>
         </div>
 
         {/* Copyright */}

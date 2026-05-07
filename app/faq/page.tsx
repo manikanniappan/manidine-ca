@@ -8,8 +8,8 @@ export default function FAQPage() {
       <section style={hero}>
         <h1 style={h1}>FAQ</h1>
         <p style={sub}>
-          Quick answers about ManiDine. We’re launching in Edmonton first and will keep
-          improving the platform based on real feedback.
+          Quick answers about ManiDine. We’re now onboarding Edmonton restaurants
+          and drivers while customer ordering opens as restaurants go live.
         </p>
       </section>
 
@@ -25,40 +25,40 @@ export default function FAQPage() {
           />
           <QA
             q="When will the app be available?"
-            a="We’re preparing for launch. You can join the waitlist and we’ll notify you when downloads open."
+            a="The ManiDine apps are available to download now. Customer ordering opens as restaurants go live across Edmonton."
           />
         </Block>
 
         <Block title="Customers">
           <QA
             q="Will ManiDine be cheaper than other apps?"
-            a="That’s the goal. ManiDine is designed for transparent fees and a model that avoids heavy commissions."
+            a="ManiDine is designed for transparent fees, in-store menu pricing, and a model that avoids large restaurant commissions."
           />
           <QA
             q="How do refunds work?"
-            a="Refund rules will be published clearly. Typical cases include missing items, wrong items, or order issues confirmed with the restaurant."
+            a="Refund rules are handled based on the order issue, restaurant status, and delivery status. ManiDine focuses on clear, fair handling for customers, restaurants, and drivers."
           />
         </Block>
 
         <Block title="Restaurants">
           <QA
             q="Do you charge restaurants commission?"
-            a="ManiDine is built around a commission-free approach. Final terms can vary by market, but fairness and transparency are core."
+            a="ManiDine does not charge large percentage commissions like many major platforms. Restaurants pay a flat $1.99 ManiDine fee per order, standard external payment processing fees, and a monthly membership only when ManiDine brings sales."
           />
           <QA
             q="How do restaurants join?"
-            a="Use the contact page to join the restaurant waitlist. We’ll follow up with onboarding steps."
+            a="Restaurants can apply through the ManiDine restaurant signup portal. Approved partners receive portal access during onboarding."
           />
         </Block>
 
         <Block title="Drivers">
           <QA
             q="How do drivers get paid?"
-            a="Drivers receive clear delivery earnings and keep tips. More details will be shared during onboarding."
+            a="Drivers keep 100% of delivery fees and 100% of customer tips. Delivery fee and tip amounts are shown transparently."
           />
           <QA
             q="How can I apply?"
-            a="Use the contact page to join the driver waitlist. We’ll notify you when onboarding opens."
+            a="Download the ManiDine Driver app, complete your profile, and have your required documents ready for review."
           />
         </Block>
       </section>

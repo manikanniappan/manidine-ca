@@ -1,4 +1,4 @@
-// ManiDine.ca /app/layout.tsx — Updated: 2026-01-12 12:55 (America/Edmonton)
+// ManiDine.ca /app/layout.tsx — Updated: 2026-05-07 16:18 (America/Edmonton)
 // FILE: app/layout.tsx
 
 import type { Metadata, Viewport } from "next";
@@ -27,44 +27,42 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   metadataBase: new URL("https://manidine.ca"),
   title: {
-    default: "ManiDine — Fair food delivery for customers, restaurants, and drivers",
+    default: "ManiDine | Edmonton Food Delivery with Honest Pricing",
     template: "%s | ManiDine",
   },
   description:
-    "ManiDine is Edmonton-first, transparent food delivery with fair pricing: in-store menu pricing, flat service fees, no hidden fees, and drivers keep 100% tips.",
+    "ManiDine is an Edmonton-first food delivery platform with in-store menu pricing, a flat $1.99 service fee, clear delivery fees, and drivers keeping 100% of delivery fees and tips.",
   applicationName: "ManiDine",
   keywords: [
     "ManiDine",
     "food delivery Edmonton",
-    "commission free food delivery",
+    "Edmonton food delivery",
     "restaurant delivery platform",
-    "delivery drivers",
-    "transparent pricing",
+    "delivery drivers Edmonton",
+    "transparent food delivery pricing",
+    "commission free restaurant delivery",
   ],
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     url: "https://manidine.ca",
     siteName: "ManiDine",
-    title: "ManiDine — Fair food delivery for customers, restaurants, and drivers",
+    title: "ManiDine | Edmonton Food Delivery with Honest Pricing",
     description:
-      "Edmonton-first, transparent food delivery with fair pricing and no hidden fees.",
+      "Edmonton-first food delivery with in-store menu pricing, clear fees, and drivers keeping 100% of delivery fees and tips.",
     images: [
       {
         url: "/og/og.png",
         width: 1200,
         height: 630,
-        alt: "ManiDine — Transparent food delivery",
+        alt: "ManiDine — Edmonton food delivery with honest pricing",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ManiDine — Fair food delivery",
+    title: "ManiDine | Edmonton Food Delivery",
     description:
-      "Edmonton-first, transparent food delivery with fair pricing and no hidden fees.",
+      "In-store menu pricing, clear fees, and drivers keeping 100% of delivery fees and tips.",
     images: ["/og/og.png"],
   },
   icons: {
