@@ -1,4 +1,4 @@
-// ManiDine.ca — app/drivers/page.tsx — Updated: 2026-05-07 16:12 (America/Edmonton)
+// ManiDine.ca — app/drivers/page.tsx — Updated: 2026-05-11 10:25 (America/Edmonton)
 // FILE: app/drivers/page.tsx
 
 const DRIVER_IOS_LINK = "https://apps.apple.com/us/app/manidinedriver/id6763635631";
@@ -102,7 +102,7 @@ export default function DriversPage() {
 
       <section style={requirementsBox}>
         <div style={requirementsGrid}>
-          <div>
+          <div style={requirementsContent}>
             <h2 style={h2}>Basic driver requirements</h2>
             <ul style={checkList}>
               {DRIVER_REQUIREMENTS.map((item) => (
@@ -214,10 +214,15 @@ const requirementsBox: React.CSSProperties = {
 };
 
 const requirementsGrid: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "minmax(0, 1.45fr) minmax(280px, 0.75fr)",
+  display: "flex",
+  flexWrap: "wrap",
   gap: 24,
-  alignItems: "start",
+  alignItems: "flex-start",
+};
+
+const requirementsContent: React.CSSProperties = {
+  flex: "1 1 420px",
+  minWidth: 0,
 };
 
 const foundingBox: React.CSSProperties = {
@@ -305,6 +310,8 @@ const exampleItem: React.CSSProperties = {
 };
 
 const readyCard: React.CSSProperties = {
+  flex: "1 1 280px",
+  minWidth: 0,
   borderRadius: 18,
   padding: 18,
   background: "linear-gradient(135deg, rgba(15,113,212,0.16), rgba(204,71,206,0.14))",
